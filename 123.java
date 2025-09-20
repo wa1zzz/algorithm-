@@ -1,6 +1,24 @@
-public class Main {
+// Описание переменных и структур данных
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Stack;
+
+public class DataStructures {
     public static void main(String[] args) {
-        String str_1 = "AaBbCcDd";
-        StringBuilder uppercaseStr = new StringBuilder();
-        StringBuilder lowercaseStr = new StringBuilder();
+        // Инициализация пустого списка
+        List<Integer> a = new ArrayList<>();  // Это пустой список для хранения целых чисел
+        // ArrayList представляет собой динамический массив, который может расти по мере необходимости
+        // Позволяет хранить элементы с доступом по индексу и поддерживает различные операции
+        // Инициализация стека
+        Stack<Integer> m = new Stack<>();  // Это стек для хранения целых чисел
+        // Стек - структура данных типа LIFO (Last In, First Out)
+        // Последний добавленный элемент будет извлечен первым
+        // Основные операции: push (добавление) и pop (извлечение)
+        // Добавление элементов в стек с помощью метода push()
+        m.push(10);    // Добавление элемента 10 в стек
+        m.push(20);    // Добавление элемента 20 в стек
+        m.push(30);    // Добавление элемента 30 в стек
         
+        // Стек теперь содержит: [10, 20, 30]
+    }
+}
